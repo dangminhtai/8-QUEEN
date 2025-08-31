@@ -3,33 +3,15 @@ import tkinter as tk
 import os
 from PIL import Image, ImageTk
 from tkinter import colorchooser
+from config.board import *
 
-TILE=75
-N=8
-queen_pos=[['♕','','','','','','',''],
-           ['','','','','♕','','',''],
-           ['','','','','','','','♕'],
-           ['','','','','','♕','',''],
-           ['','','♕','','','','',''],
-           ['','','','','','','♕',''],
-           ['','♕','','','','','',''],
-           ['','','','♕','','','','']
-           ]
-light_color = "#EBECD0"
-dark_color = "#739552"
-themes = {
-    "Classic (Xanh rêu)": ("#EBECD0", "#739552"),
-    "Blue": ("#D0E6F7", "#3B7EBF"),
-    "Red": ("#F7D0D0", "#BF3B3B"),
-    "Gray": ("#F0F0F0", "#808080")
-}
 # Giao diện
 root=tk.Tk()
 root.geometry("1400x700+10+10")
 root.title("8 quân hậu")
 # Lấy đường dẫn ảnh
 current_path = os.path.dirname(os.path.abspath(__file__))
-queen_path = os.path.join(current_path, "image.png")
+queen_path = os.path.join(current_path, "assets/queen.png")
 img = Image.open(queen_path)
 img = img.resize((TILE-5, TILE-5), Image.Resampling.LANCZOS)
 queen_img = ImageTk.PhotoImage(img)
@@ -85,7 +67,6 @@ menu_bar.add_cascade(label="Tùy chỉnh", menu=theme_menu)
 for name, (light, dark) in themes.items():
     theme_menu.add_command(label=name, command=lambda l=light, d=dark: apply_theme(l, d))
 theme_menu.add_command(label="Custom...", command=custom_theme)
-
 shuffle_num(canvas_1)
 shuffle_num(canvas_2,draw_q=True)
 root.mainloop()
