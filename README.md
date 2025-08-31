@@ -3,19 +3,22 @@
 ## 1. Cấu trúc dự án
 ```text
 .
-├── assets/
-│   └── queen.png
-├── config/
-│   ├── __init__.py
-│   └── board.py
-├── script_py/
-│   └── load_tree.ps1
-├── ui/
+├── assets
+│   ├── queen.png
+├── config
+│   ├── board.py
+├── helpers
+│   ├── draw.py
+├── script_py
+│   ├── load_tree.ps1
+├── ui
 │   ├── canvas_ui.py
-│   └── menu_ui.py
+│   ├── menu_ui.py
+├── utils
+│   ├── image_loader.py
 ├── .gitignore
 ├── main.py
-└── README.md
+├── README.md
 ```
 ## 2. Yêu cầu hệ thống
 
