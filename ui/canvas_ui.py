@@ -1,3 +1,4 @@
+#ui/canvas_ui.py
 import tkinter as tk
 
 def create_canvases(root, width=600, height=600):

@@ -1,3 +1,4 @@
+#config/board.py
 TILE=75
 N=8
 QUEEN_POS=[['♕','','','','','','',''],
