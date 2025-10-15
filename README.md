@@ -61,18 +61,17 @@ Chạy ứng dụng:
 ## 4. Tính năng chính
 
 * Hai **Canvas** bên trái/phải để hiển thị bàn cờ và trạng thái quân hậu.
-* Menu **Tùy chỉnh**:
-
-  * Chọn **theme** có sẵn (ánh sáng/tối) từ `config/board.py` (`THEMES`).
-  * Tạo **Custom theme** bằng hộp thoại chọn màu (sáng/tối).
+* Theme tùy chỉnh có 4 màu (Xanh rêu,Blue,Red,Gray)
 * Ảnh quân hậu được lấy từ `assets/queen.png` và **resize** tương ứng với kích thước ô (`TILE`).
-
+* Nhấn nút **[Tên thuật toán]** để chạy thuật toán và hiển thị kết quả, trong đó tên thuật toán là tên file trong thư mục `helpers/algorithms`.
+* Nhấn thêm nút **[Tên thuật toán]** 1 lần nữa để hiển thị kết quả tiếp theo.
 ## 5. Các tệp quan trọng
 
-* `config/board.py`: cấu hình bàn cờ (kích thước `N`, `TILE`, màu `LIGHT_COLOR`, `DARK_COLOR`, danh sách `THEMES`, vị trí `QUEEN_POS`, ...).
-* `ui/canvas_ui.py`: tạo và trả về hai Canvas.
-* `ui/menu_ui.py`: tạo Menu và gắn sự kiện chọn Theme/Custom.
-* `main.py`: khởi tạo giao diện, load ảnh, định nghĩa hàm vẽ (`draw_queen`), áp dụng theme và chạy vòng lặp Tkinter.
+* Thư mục `assets` chứa hình ảnh con hậu `queen.png`
+* app.py chứa giao diện và cấu hình ban đầu
+* Thư mục `helpers/algorithms` chứa các thuật toán
+* Thư mục `helpers/loader.py` chứa hàm load thuật toán
+
 
 ---
 
