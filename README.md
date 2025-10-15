@@ -2,22 +2,30 @@
 
 ## 1. Cấu trúc dự án
 ```text
-.
 ├── assets
 │   ├── queen.png
-├── config
-│   ├── board.py
+│   ├── rook.png
 ├── helpers
-│   ├── draw.py
-├── script_py
-│   ├── load_tree.ps1
-├── ui
-│   ├── canvas_ui.py
-│   ├── menu_ui.py
-├── utils
-│   ├── image_loader.py
+│   ├── algorithms
+│   │   ├── AC3.py
+│   │   ├── ao_search.py
+│   │   ├── astar.py
+│   │   ├── backtracking.py
+│   │   ├── bfs.py
+│   │   ├── dfs.py
+│   │   ├── dls.py
+│   │   ├── foward_checking.py
+│   │   ├── ga.py
+│   │   ├── hill_climbing.py
+│   │   ├── ids.py
+│   │   ├── local_beam.py
+│   │   ├── sa.py
+│   │   ├── sensorless.py
+│   │   ├── ucs.py
+│   ├── loader.py
 ├── .gitignore
-├── main.py
+├── app.py
+├── read.md
 ├── README.md
 ```
 ## 2. Yêu cầu hệ thống

@@ -1,3 +1,5 @@
+#Link Github https://github.com/dangminhtai/8-QUEEN
+
 import tkinter as tk
 from PIL import Image, ImageTk
 import os
@@ -41,7 +43,7 @@ class NQueensApp:
         # Nút đổi theme
         self.theme_var = tk.StringVar(value="Classic (Xanh rêu)")
         self.theme_menu = tk.OptionMenu(root, self.theme_var, *THEMES.keys(), command=self.change_theme)
-        self.theme_menu.place(x=650, y=10)
+        self.theme_menu.place(x=1200, y=10)
 
         # Vẽ 2 bàn cờ
         self.draw_board(self.canvas_1)
